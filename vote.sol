@@ -128,10 +128,7 @@ contract Voting is Ownable {
         
         //@dev on prend en compte la possibilité de plusieurs propositions gagnantes 
         //@dev dont les indexes sont stockés dans winningProposalIds
-        
-        
-        if (proposals[0].voteCount >= proposals[1].voteCount) winningProposalIds[0].push(0);
-        
+        if (proposals[0].voteCount >= proposals[1].voteCount) winningProposalIds[0].push(0);        
         for (uint index = 1; index < proposals.length; index++) {
             if (proposals[winningProposalId].voteCount < proposals[index].voteCount) {
                 winningProposalId = index ;
