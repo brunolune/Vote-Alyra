@@ -6,6 +6,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/access/
 //@notice Ce contrat gère un système de vote pour une petite communauté. L'administrateur qui 
 //@notice déploie le contrat, est en charge d'ajouter les participants, et de démarrer et terminer 
 //@notice chaque phase du processus de vote. Les participants font des propositions et les votent.
+//@notice github: https://github.com/brunolune/Vote-Alyra/blob/main/vote.sol
 
 contract Voting is Ownable {
     
