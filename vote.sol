@@ -148,7 +148,7 @@ contract Voting is Ownable {
     }
     
     //@notice Tout le monde peut vérifier les derniers détails de la proposition gagnante.
-    function I_WinningProposalId() public view returns(uint[] memory) {
+    function I_WinningProposalIds() public view returns(uint[] memory) {
         require(voteStatus == WorkflowStatus.VotesTallied,"Votes not counted yet!");
         //@dev on retourne un tableau avec les indices des propositions gagnantes
         return winningProposalIds[winningProposalId];
